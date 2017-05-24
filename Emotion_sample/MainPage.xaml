@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Emotion_sample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Emotion_sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <CaptureElement x:Name="preview" HorizontalAlignment="Left" Height="240" Margin="10,95,0,0" VerticalAlignment="Top" Width="320"/>
+        <Image x:Name="resultview" HorizontalAlignment="Left" Height="240" Margin="335,95,0,0" VerticalAlignment="Top" Width="320"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Emotion" VerticalAlignment="Top" FontSize="36" Width="780" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,63,0,0" TextWrapping="Wrap" Text="Preview" VerticalAlignment="Top" Width="320" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="335,63,0,0" TextWrapping="Wrap" Text="Capture" VerticalAlignment="Top" Width="320" TextAlignment="Center"/>
+        <AppBarButton HorizontalAlignment="Left" Label="Capture" Margin="139,335,0,0" VerticalAlignment="Top" Icon="Camera" Click="AppBarButton_Click"/>
+        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="240" Margin="335,95,0,0" VerticalAlignment="Top" Width="320"/>
+        <TextBox x:Name="resultTbox" HorizontalAlignment="Left" Margin="660,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="240"/>
+        
+
+    </Grid>
+</Page>
